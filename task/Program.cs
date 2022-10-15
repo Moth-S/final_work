@@ -20,3 +20,14 @@ string[] GetArray(int size)
     return array;
 }
 
+///вывод массива на экран
+void PrintArray(string[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.WriteLine(arr[i]+"/t");
+    }
+}
+
+GetArray(size);
+PrintArray(array)
