@@ -23,10 +23,25 @@ string[] GetArray(int size)
 ///вывод массива на экран
 void PrintArray(string[] arr)
 {
+    Console.WriteLine("Start array: ");
     for (int i = 0; i < arr.Length; i++)
     {
-        Console.WriteLine(arr[i]+"/t");
+        Console.Write($" {arr[i]}    ");
     }
 }
 
-PrintArray(GetArray(size));
+///метод считает кол-во элементов с длиной <=3
+int CountWord(string[] arr)
+{
+    int count=0;
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i].Length<=3) count++;
+    }
+
+    return count;
+}
+
+string[] array = GetArray(size);
+PrintArray(array);
+
