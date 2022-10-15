@@ -29,5 +29,4 @@ void PrintArray(string[] arr)
     }
 }
 
-GetArray(size);
-PrintArray(array)
+PrintArray(GetArray(size));
