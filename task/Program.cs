@@ -42,6 +42,10 @@ int CountWord(string[] arr)
     return count;
 }
 
-string[] array = GetArray(size);
-PrintArray(array);
+string[] array1 = GetArray(size);
+PrintArray(array1);
+
+string[] array2 = new string[CountWord(array1)];
+
+
 
